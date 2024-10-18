@@ -1,0 +1,16 @@
+import random
+
+# Define suits and ranks
+suits = ["Spades", "Diamonds", "Clubs", "Hearts"]
+ranks = ["Queen", "Jack", "King", "Ace"]
+
+# Create a deck of cards
+deck = [(rank, suit) for suit in suits for rank in ranks]
+
+# Select 13 random cards from the deck
+random_cards = random.sample(deck, 13)
+
+# Print the selected cards
+print("Selected cards:")
+for card in random_cards:
+    print(f"{card[0]} of {card[1]}")
